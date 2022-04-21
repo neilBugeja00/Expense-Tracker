@@ -10,7 +10,7 @@
     <color name="darkBlue">#222831</color>
     <color name="teal">#00ADB5</color>
     <color name="yourSelectedColour">#00ADB5</color>
-    <color name="darkGrey">#393E46</color>
+    <color name="darkGrey">#222831</color>
     <color name="defaultColour">#393E46</color>
-    <color name="lightGrey">#EEEEEE</color>
+    <color name="lightGrey">#393E46</color>
 </resources>
