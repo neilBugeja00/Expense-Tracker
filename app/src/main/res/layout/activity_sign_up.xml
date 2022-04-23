@@ -35,13 +35,6 @@
         />
 
     <EditText
-        android:id="@+id/regUsername"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:hint="Username"
-        />
-
-    <EditText
         android:id="@+id/regEmail"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
