@@ -35,7 +35,7 @@ public class AccountFragment extends Fragment {
         addAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Fuck me Jerry!", Toast.LENGTH_LONG).show();
+                createNewAccountDialog();
             }
         });
 
@@ -44,11 +44,27 @@ public class AccountFragment extends Fragment {
     }
 
     public void createNewAccountDialog(){
-        //dialogBuilder = new AlertDialog.Builder(this);
+        //linking buttons
+        dialogBuilder = new AlertDialog.Builder(getActivity());
         final View accountPopupView = getLayoutInflater().inflate(R.layout.account_popup,null);
         newName = (EditText) accountPopupView.findViewById(R.id.newName);
         newAmount = (EditText) accountPopupView.findViewById(R.id.newAmmount);
         confirmAddAccountBtn = (Button) accountPopupView.findViewById(R.id.confirmAddAccountBtn);
+
+        //adding account
+        AccountDAO dao = new AccountDAO();
+
+        confirmAddAccountBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Account account = new Account(newName.getText().toString().trim(), newAmount.getText().toString().trim());
+                dao.add(account).addOnSuccessListener(suc->{
+                    Toast.makeText(getActivity(), "Account Added", Toast.LENGTH_LONG).show();
+                }).addOnFailureListener(err ->{
+                    Toast.makeText(getActivity(), ""+err.getMessage(), Toast.LENGTH_LONG).show();
+                });
+            }
+        });
 
         dialogBuilder.setView(accountPopupView);
         dialog = dialogBuilder.create();

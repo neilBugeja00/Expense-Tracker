@@ -10,7 +10,7 @@ public class AccountDAO {
 
     public AccountDAO(){
         FirebaseDatabase db = FirebaseDatabase.getInstance("https://expensetracker-8ed93-default-rtdb.europe-west1.firebasedatabase.app"); //gets root
-        databaseReference = db.getReference(User.class.getSimpleName());
+        databaseReference = db.getReference(Account.class.getSimpleName());
     }
 
     public Task<Void> add(Account account){
