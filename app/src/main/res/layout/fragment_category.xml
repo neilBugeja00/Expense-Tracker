@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AccountFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recycler_view_accounts"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addCatButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Category Fragment"
-        android:textSize="25dp"
-        android:layout_centerInParent="true"/>
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_add_unselected">
 
-</RelativeLayout>
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="100dp"
+        android:text="Chart"
+        >
+    </Button>
+
+
+
+</FrameLayout>
