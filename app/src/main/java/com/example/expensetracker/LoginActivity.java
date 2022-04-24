@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText editEmail, editPassword;
-    private Button signIn, callSignUp;
+    private Button signIn, callSignUp, callForgetPassword;
 
     private FirebaseAuth mAuth;
 
@@ -49,6 +49,17 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
+                finish();
+            }
+        });
+
+        //Make button "createAccount" move to "SignUpActivity.java"
+        callForgetPassword = (Button)findViewById(R.id.btnForgetPassword);
+
+        callForgetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, ForgotPassword.class));
                 finish();
             }
         });
