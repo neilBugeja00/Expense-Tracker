@@ -13,14 +13,16 @@
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/nav_background_curved.xml" value="0.193" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/drawable/round_corners.xml" value="0.2985" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_account.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_add_transaction.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_category.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_list_transactions.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/fragment_overview.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/layout/header.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/neilb/AndroidStudioProjects/ExpenseTracker/app/src/main/res/menu/drawer_nav_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
