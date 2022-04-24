@@ -1,13 +1,9 @@
 package com.example.expensetracker;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.graphics.Color;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
@@ -19,23 +15,22 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
+public class CategoryPieChart extends AppCompatActivity {
 
-public class OverviewFragment extends Fragment {
-
-    private PieChart pieChart;
+    public PieChart pieChart;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.category_pie, container,false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-        pieChart = (PieChart) view.findViewById(R.id.category_pieChart);
+        setContentView(R.layout.category_pie);
+
+        pieChart = (PieChart) findViewById(R.id.category_pieChart);
+        pieChart.setDrawHoleEnabled(true);
         setupPieChart();
         loadPieChartData();
-
-        // Inflate the layout for this fragment
-        return view;
     }
+
 
     private void setupPieChart(){
         pieChart.setDrawHoleEnabled(true);
