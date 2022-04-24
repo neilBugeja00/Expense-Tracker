@@ -40,9 +40,11 @@ public class ForgotPassword extends AppCompatActivity {
         });
     }
 
+    //method to reset password
     private void resetPassword(){
         String email = emailEditText.getText().toString().trim();
 
+        //validation
         if(email.isEmpty()){
             emailEditText.setError("Email required");
             emailEditText.requestFocus();
@@ -54,6 +56,7 @@ public class ForgotPassword extends AppCompatActivity {
             return;
         }
 
+        //reset password
         mAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
