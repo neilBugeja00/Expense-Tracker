@@ -25,4 +25,8 @@ public class Account {
         this.name = name;
         this.ammount = ammount;
     }
+
+    public Account(){
+
+    }
 }
