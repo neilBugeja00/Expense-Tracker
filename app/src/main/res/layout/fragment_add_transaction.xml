@@ -30,6 +30,7 @@
         android:layout_marginLeft="8dip"
         android:layout_marginRight="8dip"
         android:layout_marginTop="20dp"
+        android:textColor="#FF0000"
         />
 
     <TextView
@@ -56,6 +57,16 @@
         android:hint="€ Amount"
         android:inputType="numberDecimal"
         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmAddTransactionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ADB5"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="5dp"/>
 
 
 </LinearLayout>
