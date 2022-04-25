@@ -29,4 +29,8 @@ public class Category {
         this.catName = catName;
         this.catAmmount = catAmmount;
     }
+
+    public Category(String catName){
+        this.catName = catName;
+    }
 }

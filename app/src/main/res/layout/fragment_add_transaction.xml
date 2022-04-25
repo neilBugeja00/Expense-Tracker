@@ -19,16 +19,43 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="8dip"
-        android:text="Category"/>
+        android:text="Category Name"
+        android:layout_marginTop="20dp"/>
 
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/spinnerCategory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:layout_marginTop="20dp"
+        android:text="Account Name"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerAccount"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dip"
         android:layout_marginRight="8dip"
         android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/newTransAmmount"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:hint="€ Amount"
+        android:inputType="numberDecimal"
+        />
 
 
 </LinearLayout>
