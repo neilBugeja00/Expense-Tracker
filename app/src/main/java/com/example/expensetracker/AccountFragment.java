@@ -62,7 +62,7 @@ public class AccountFragment extends Fragment {
         accountAdapter = new AccountAdapter(getActivity(),list);
         recyclerView.setAdapter(accountAdapter);
 
-
+        //extracting data from db
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
