@@ -106,7 +106,22 @@ public class AccountFragment extends Fragment {
         confirmAddAccountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Account account = new Account(newName.getText().toString().trim(), newAmount.getText().toString().trim());
+                String Name = newName.getText().toString().trim();
+                String Amount = newAmount.getText().toString().trim();
+
+                if(Name.isEmpty()){
+                    newName.setError("Account Name required");
+                    newName.requestFocus();
+                    return;
+                }
+
+                if(Amount.isEmpty()){
+                    newAmount.setError("Amount required");
+                    newAmount.requestFocus();
+                    return;
+                }
+
+                Account account = new Account(Name, Amount);
                 dao.add(account).addOnSuccessListener(suc->{
                     Toast.makeText(getActivity(), "Account Added", Toast.LENGTH_LONG).show();
                 }).addOnFailureListener(err ->{

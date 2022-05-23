@@ -87,7 +87,10 @@ public class AddTransactionFragment extends Fragment{
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Category category = dataSnapshot.getValue(Category.class);
                     categoryList.add(category);
-                    categoryNameList.add(category.getCatName());
+                    if(category!=null){
+                        categoryNameList.add(category.getCatName());
+                    }
+
                 }
                 categoryAdapter.notifyDataSetChanged();
 
@@ -108,7 +111,10 @@ public class AddTransactionFragment extends Fragment{
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Account account = dataSnapshot.getValue(Account.class);
                     accountList.add(account);
-                    accountNameList.add(account.getName());
+                    if(account!=null){
+                        accountNameList.add(account.getName());
+                    }
+
                 }
                 accountAdapter.notifyDataSetChanged();
 

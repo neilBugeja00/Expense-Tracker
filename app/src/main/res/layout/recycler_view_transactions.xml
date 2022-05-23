@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:text="TransCat"
+            android:textColor="@color/offWhite"
             >
 
         </TextView>
@@ -28,6 +29,7 @@
             android:textSize="20dp"
             android:text="TransAccount"
             android:layout_below="@+id/text_view_transCat"
+            android:textColor="@color/offWhite"
             >
 
         </TextView>
@@ -42,6 +44,7 @@
             android:layout_marginTop="14dp"
             android:layout_marginBottom="12dp"
             android:layout_below="@+id/text_view_transAccount"
+            android:textColor="@color/offWhite"
             >
 
         </TextView>

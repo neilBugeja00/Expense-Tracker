@@ -105,7 +105,22 @@ public class CategoryFragment extends Fragment {
         confirmAddCatBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Category category = new Category(newCatName.getText().toString().trim(), newCatAmount.getText().toString().trim());
+                String catName = newCatName.getText().toString().trim();
+                String catAmount = newCatAmount.getText().toString().trim();
+
+                if(catName.isEmpty()){
+                    newCatName.setError("Category Name required");
+                    newCatName.requestFocus();
+                    return;
+                }
+
+                if(catAmount.isEmpty()){
+                    newCatAmount.setError("Amount required");
+                    newCatAmount.requestFocus();
+                    return;
+                }
+
+                Category category = new Category(catName,catAmount );
                 dao.add(category).addOnSuccessListener(suc->{
                     Toast.makeText(getActivity(), "Category Added", Toast.LENGTH_LONG).show();
                 }).addOnFailureListener(err ->{

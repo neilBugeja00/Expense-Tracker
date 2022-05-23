@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:text="TestName"
+            android:textColor="@color/white"
             >
 
         </TextView>
@@ -31,6 +32,7 @@
             android:layout_marginTop="14dp"
             android:layout_marginBottom="12dp"
             android:layout_below="@+id/text_view_name"
+            android:textColor="@color/white"
             >
 
         </TextView>

@@ -32,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="Full Name"
+        android:textColor="@color/offWhite"
         />
 
     <EditText
@@ -39,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="Email"
+        android:textColor="@color/offWhite"
         />
 
     <EditText
@@ -46,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="Password"
+        android:textColor="@color/offWhite"
         />
 
     <androidx.appcompat.widget.AppCompatButton

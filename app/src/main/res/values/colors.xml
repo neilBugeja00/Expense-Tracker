@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="darkBlue">#222831</color>
+    <color name="hint">#0e0e0e</color>
+    <color name="offWhite">#FAF9F6</color>
     <color name="teal">#00ADB5</color>
     <color name="yourSelectedColour">#00ADB5</color>
     <color name="darkGrey">#222831</color>

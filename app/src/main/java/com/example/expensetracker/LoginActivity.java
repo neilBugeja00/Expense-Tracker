@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         if(password.isEmpty()){
-            editPassword.setError("Full name required");
+            editPassword.setError("Password required");
             editPassword.requestFocus();
             return;
         }
